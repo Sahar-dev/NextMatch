@@ -9,16 +9,12 @@ import React from 'react'
 
 type Props ={
     member: Member
+    navLinks: {name: string, href: string}[]
 }
-export default function MemberSideBar({member}: Props) {
+export default function MemberSideBar({member, navLinks}: Props) {
     const pathname =usePathname();
 
-    const basepath = `/members/${member.userId}`
-    const navLinks =[
-        {name: 'Profile', href:`${basepath}`},
-        {name: 'Photo', href:`${basepath}/photos`},
-        {name: 'Chats', href:`${basepath}/chat`},
-    ]
+   
   return (
     <Card className='w-full mt-10 items-center h-[80vh]'>
         <Image 
