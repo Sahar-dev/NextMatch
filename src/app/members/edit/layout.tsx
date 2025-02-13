@@ -19,7 +19,7 @@ export default async function Layout({ children }: { children: ReactNode }) {
     
     // Render layout with member sidebar and children content
     return (
-      <div className='grid grid-cols-12 gap-5 h-[80vh]'>
+      <div className='grid grid-cols-12 gap-5 h-[80vh] mx-7'>
         <div className="col-span-3">
           <MemberSideBar member={member}  navLinks={navLinks}/>
         </div>

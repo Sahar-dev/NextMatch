@@ -20,7 +20,7 @@ export default function MemberSideBar({member, navLinks}: Props) {
         <Image 
         height={200}
         width={200}
-        src={member.image || '/images/user.png'}
+        src={ member.image || '/images/user.png'}
         alt='User profile main image'
         className='rounded-full mt-6 aspect-square object-cover'
         />
